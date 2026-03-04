@@ -3,13 +3,13 @@ pipeline {
 agent any 
 stages {
 stage('Build') {
-steps{ sh 'npm install' }
+steps{ echo ' hello team ' }
 }
 stage('Test') {
-steps { sh 'npm test' }
+steps { echo ' testing ' }
 }
 stage('Deploy') {
-steps {sh 'echo Deploying...' }
+steps { echo 'Deploying...' }
 }
 }
 }
